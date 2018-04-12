@@ -1,0 +1,17 @@
+.Like {
+padding:50px;
+border-radius:50%;
+background-color:pink;
+box-shadow:5px 5px 5px black;
+color:white;
+font-size:25px;
+}
+
+.Dislike {
+padding:50px;
+border-radius:50%;
+background-color:black;
+color:white;
+box-shadow:5px 5px 5px black;
+font-size:25px;
+}

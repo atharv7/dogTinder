@@ -1,10 +1,21 @@
 import React,{ PureComponent } from 'react'
+import {connect} from 'react-redux'
+
+
 class DogDisplayer extends PureComponent {
+
   render() {
-    return (
-      <img style = {{maxWidth: '500px'}}src="https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg" />
+return (
+      <div>
+      <img style = {{maxWidth: '500px'}} src={this.props.currentPic} />
+      </div>
     )
   }
 }
 
-export default DogDisplayer
+const mapStateToProps = (state) => {
+  return {
+    currentPic: state.dogDisplayer
+  }
+}
+export default connect(mapStateToProps)(DogDisplayer)
