@@ -1,12 +1,12 @@
 import React,{ PureComponent } from 'react'
 
 
+var array1 = ["1", "2", "3", "4", "5", "6", "7", "8"];
+var array2 = ["3", "4", "34", "74", "6"];
 
-var a = ["1", "2", "3", "5", "7"], b = ["101", "2", "1", "10", "7"];
-var equals = a.concat(b.filter(function (item) {
-    return a.indexOf(item) < 0;
-}));
-
+var equals = array1.filter(function(val) {
+  return array2.indexOf(val) != -1;
+});
 
 
 class DisplayMatches extends PureComponent {
