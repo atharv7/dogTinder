@@ -12,7 +12,7 @@ componentWillMount() {
 
 return (
       <div>
-      <img style = {{maxWidth: '500px'}} src={this.props.currentPic} />
+      <img className="displayDogStyle" style = {{maxWidth: '500px'}} src={this.props.currentPic} />
       </div>
     )
   }
