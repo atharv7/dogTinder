@@ -1,16 +1,16 @@
-const myPreferences = [1,2,3]
-
-const changePic = () => {}
+const myPreferences = []
 
 export default (state=myPreferences, {type,payload} = {}) => {
+
   switch(type){
+
     case 'LIKE':
-      changePic()
-      state = state.concat(payload)
+      state = state.concat(payload.split('/')[payload.split('/').length-2])
       return state
     case 'DISLIKE':
-      changePic()
       return state
+    case 'UPDATE_PREFS':
+      return state.concat(payload.split('/')[payload.split('/').length-2])
     default:
       return state
   }

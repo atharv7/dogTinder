@@ -1,10 +1,10 @@
-import {LIKE} from './type'
+import LIKE from './types'
+import FETCH_IMAGE from './types'
 
-export const like = (picture) {
-  return {
+export const like = (picture) => (dispatch) => {
+
+  return dispatch({
     type: LIKE,
-    payload: {
-      myPreferences,responseButton
-    }
-  }
+    payload: picture
+  })
 }

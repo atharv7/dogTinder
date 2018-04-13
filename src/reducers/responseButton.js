@@ -1,6 +1,7 @@
-export const currentPic = 'https://metrouk2.files.wordpress.com/2017/03/512366437.jpg?w=748&h=498&crop=1'
+export const currentPic = 'http://meekeranimalhospital.com/clients/12944/images/loading.gif'
+const myPreferences = [1,2,3]
 
 export default (state=currentPic, {type,payload} = {}) => {
-
+  // fetchImage()
   return state
 }

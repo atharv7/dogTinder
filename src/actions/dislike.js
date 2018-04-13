@@ -1,10 +1,8 @@
-import {DISLIKE} from './type'
+import DISLIKE from './types'
 
-export const dislike = (picture) {
-  return {
+export const dislike = (picture) => (dispatch) => {
+  return dispatch({
     type: DISLIKE,
-    payload: {
-      myPreferences,responseButton
-    }
-  }
+    payload: picture
+  })
 }

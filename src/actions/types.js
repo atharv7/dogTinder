@@ -1,4 +1,4 @@
 const LIKE = 'LIKE'
 const DISLIKE = 'DISLIKE'
-
-export default (LIKE,DISLIKE)
+const FETCH_IMAGE = 'FETCH_IMAGE'
+export default (LIKE,DISLIKE,FETCH_IMAGE)
